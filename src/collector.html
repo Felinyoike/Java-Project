@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collector</title>
+  <link rel="stylesheet" href="CSS/collector.css">
+</head>
+<body>
+  <header>
+    <h1>Milk Collection - Collector</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="group.html">Group</a></li>
+        <li><a href="processor.html">Processor</a></li>
+        <li><a href="farmer.html">Farmer</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Milk Collection Form</h2>
+    <form id="collectionForm">
+      <label for="farmerName">Farmer Name/ID:</label>
+      <input type="text" id="farmerName" required>
+
+      <label for="quantity">Quantity (L):</label>
+      <input type="number" id="quantity" required>
+
+      <label for="quality">Quality (1-10):</label>
+      <input type="number" id="quality" min="1" max="10" required>
+
+      <label for="containerIds">Container IDs:</label>
+      <input type="text" id="containerIds" required>
+
+      <button type="submit">Submit Collection Report</button>
+    </form>
+
+    <h3>Past Collections</h3>
+    <div id="pastCollections"></div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Milk Collection Company</p>
+  </footer>
+
+  <script src="Javascript/collector.js"></script>
+</body>
+</html>
