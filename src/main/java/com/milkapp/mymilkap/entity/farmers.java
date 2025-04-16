@@ -26,9 +26,9 @@ public class farmers {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "email")
+    @Column(name = "contact")
     private Integer contact;
 
-    @Column(name = "password")
+    @Column(name = "farm_details")
     private String farm_details;
 }
